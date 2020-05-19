@@ -1,0 +1,336 @@
+
+
+
+
+
+<main>
+  <section id="banner">
+			
+  </section>
+  <section id="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 h-line">
+          <hr>
+        </div>
+        <div class="col-6 text-center">
+          <div class="heading">
+            <h1>Recent Products</h1>
+          </div>
+        </div>
+        <div class="col-3 h-line">
+          <hr>
+        </div>
+      </div>
+     <div *ngFor="let prod of service.list" > 
+      <div class="row ">
+        <div class="col-4 prod_margin">
+          <div class="product_detail">
+            <div class="product_img" style="background-image: url('assets/img/ADVAIR.jpg')">
+              
+            </div>
+            <div class="product_desc">
+              <h4>{{prod.ProductName}}:  *Rs.{{prod.ProductPrice}}</h4>
+               <button class="btn btn-default">View Details</button>
+            </div>
+          </div>
+        </div>
+</div>
+      <!-- <div class="row ">
+        <div class="col-4 prod_margin">
+          <div class="product_detail">
+            <div class="product_img" style="background-image: url('assets/img/ADVAIR.jpg')">
+              
+            </div>
+            <div class="product_desc">
+              <h4>Advair:  *Rs.300</h4>
+               <button class="btn btn-default">View Details</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-4 prod_margin">
+          <div class="product_detail">
+            <div class="product_img" style="background-image: url('assets/img/CRESTOR.jpeg')">
+              
+            </div>
+            <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+               <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+            
+
+            </div>
+          </div>
+        </div>
+        <div class="col-4 prod_margin">
+          <div class="product_detail">
+            <div class="product_img" style="background-image: url('assets/img/LANTUS SOLOSTAR INJECTION.jpg')">
+              
+            </div>
+            <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+               <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+            
+
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="row ">
+
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/lyrica 620.jpg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/NEXIUM.jpg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/SYNTHROID.jpg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 h-line">
+            <hr>
+          </div>
+          <div class="col-6 text-center">
+            <div class="heading">
+              <h1>FEATURED BRANDS</h1>
+            </div>
+          </div>
+          <div class="col-3 h-line">
+            <hr>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/ADVAIR.jpg')">
+                
+              </div>
+              <div class="product_desc">
+                <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/CRESTOR.jpeg')">
+                
+              </div>
+              <div class="product_desc">
+                <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/LANTUS SOLOSTAR INJECTION.jpg')">
+                
+              </div>
+              <div class="product_desc">
+                <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+  
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/lyrica 620.jpg')">
+                
+              </div>
+              <div class="product_desc">
+                <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/NEXIUM.jpg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/SYNTHROID.jpg')">
+                
+              </div>
+              <div class="product_desc">
+                <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 h-line">
+            <hr>
+          </div>
+          <div class="col-6 text-center">
+            <div class="heading">
+              <h1>FEATURED ARTICLES</h1>
+            </div>
+          </div>
+          <div class="col-3 h-line">
+            <hr>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/ADVAIR.jpg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/CRESTOR.jpeg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/LANTUS SOLOSTAR INJECTION.jpg')">
+                
+              </div>
+              <div class="product_desc">
+                <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+  
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/lyrica 620.jpg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/NEXIUM.jpg')">
+                
+              </div>
+              <div class="product_desc">
+                <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-4 prod_margin">
+            <div class="product_detail">
+              <div class="product_img" style="background-image: url('assets/img/SYNTHROID.jpg')">
+                
+              </div>
+              <div class="product_desc">
+              <h4>Advair: *Rs.300</h4>
+                 <button class="w3-button w3-white w3-border w3-border-red w3-round-large">View Details</button>
+              
+                
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+      </div>
+      </section>
+  </main>

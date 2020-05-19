@@ -1,0 +1,57 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<header>
+    <div class="header_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/img/logo1.png" class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <button class="btn-search"><span class="fa fa-search"></span></button>
+                    <input type="text" class="form-control search"  name="" placeholder="Search for Products">
+                    
+                </div>
+                <div class="col-1">
+                    <a  routerLink="/checkout"><button class="btn-search"><span class="fa fa-shopping-cart"></span></button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-11 menu">
+                    <ul>
+                        <li><a  href="index.html">HOME</a></li>
+                        <li><a href="#">PRESCRIPTION</a></li>
+                        <li> <a clas="active" routerLink="/ayush">AYUSH</a></li>
+                        <li><a href="#">FITNESS</a></li>
+                        <li><a href="#">PERSONAL CARE</a></li>
+                        <li><a href="#">FAMILY CARE</a></li>
+                        <li><a href="#">LIFESTYLE</a></li>
+                        <li><a href="#">TREATMENT</a></li>
+                    </ul>
+                </div>
+                <div class="col-1 header_bottom_right">
+                    <a  routerLink="/login" class="btn btn-info btn1">SIGN IN</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<router-outlet></router-outlet>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p>&copy; Copyrights are Reserved 2018-19</p>
+            </div>
+        </div>
+    </div>
+</footer>

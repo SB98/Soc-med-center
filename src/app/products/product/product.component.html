@@ -1,0 +1,55 @@
+<form #form="ngForm" (submit)=onSubmit(form) autocomplete="off">
+  <input type="hidden" name="ProductId" [(ngModel)]="service.formData.ProductId" #ProductId="ngModel">
+  <div class="form-group">
+    <label>ProductName</label>
+    <input name="ProductName" [(ngModel)]="service.formData.ProductName" #ProductName="ngModel" class="form-control" required>
+  </div>
+  <div class="validation-error" *ngIf="ProductName.invalid && ProductName.touched">
+    This field is required...
+  </div>
+  <div class="form-group ">
+    <label>Category</label>
+    <input name="Category" [(ngModel)]="service.formData.Category" #Category="ngModel" class="form-control" required>
+  </div>
+  <div class="validation-error" *ngIf="Category.invalid && Category.touched">
+    This field is required...
+  </div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label>ProductPrice</label>
+    <input name="ProductPrice" [(ngModel)]="service.formData.ProductPrice" #ProductPrice="ngModel" class="form-control" required>
+  </div>
+  <div class="validation-error" *ngIf="ProductPrice.invalid && ProductPrice.touched">
+    Required field...
+  </div>
+  <div class="form-group col-md-6">
+    <label>Product-Id</label>
+    <input type="text" name="ProductId" [(ngModel)]="service.formData.ProductId" #ProductId="ngModel" class="form-control" required>
+    <div class="validation-error" *ngIf="ProductId.invalid && ProductId.touched">
+      Required field...
+    </div>
+  </div> 
+</div>
+  <div class="form-group">
+    <label>Quantity</label>
+    <input name="Quantity" [(ngModel)]="service.formData.Quantity" #Quantity="ngModel" class="form-control" required>
+  </div>
+  <div class="validation-error" *ngIf="Quantity.invalid && Quantity.touched">
+    This field is required...
+  </div>
+  <div class="form-Group">
+    <button   (click)=insertRecord(form)  [disabled]="form.invalid" type="submit" class="btn-md btn-block">
+      Submit
+    </button>
+  </div>
+  <div class="form-Group">
+      <button  (click)=updateRecord(form)  [disabled]="form.invalid" type="submit" class="btn-md btn-block">
+        Update
+      </button>
+    </div>
+    <!-- <div class="form-Group">
+      <button  (click)=redirecttocustomer() type="submit" class="btn-md btn-block">
+        Customer
+      </button>
+    </div> -->
+</form>

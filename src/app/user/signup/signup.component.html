@@ -1,0 +1,51 @@
+
+     <form name="myForm" class="col s12 white" #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)">
+   
+        
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" name="Username" #Username="ngModel" [(ngModel)]="user.Username" required>
+          
+            <label >Username</label>
+          </div>
+         
+          <div class="input-field col s6">
+            <input type="email" name="Email" #Email="ngModel" required [(ngModel)]="user.Email">
+           
+            <label>Email</label>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="password" name="Password" #Password="ngModel" [(ngModel)]="user.Password" required minlength="3">
+            <label>Password</label>
+        </div>
+        <div class="input-field col s6">
+          <input type="password" name="ConfirmPassword"  autocomplete="off" #ConfirmPassword="ngModel" [(ngModel)]="user.ConfirmPassword" required minlength="3" >
+          <label>Confirm Password</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" name="Address" required #Address="ngModel" [(ngModel)]="user.Address">
+            <label>Address</label>
+          </div>
+        </div>
+
+          <div class="row">
+              <div class="input-field col s12">
+                <input type="number" name="PhoneNumber" #PhoneNumber="ngModel" required [(ngModel)]="user.PhoneNumber">
+                <label>PhoneNumber</label>
+              </div>
+            </div>
+           
+            <div class="row">
+                <div class="input-field col s12">
+                  <button [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
+                </div>
+              </div>
+ 
+      </form>    
+ 
